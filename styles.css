@@ -11,3 +11,8 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+
+.wrapper {
+    padding: 30px;
+    border: 1px solid gray;
+}
