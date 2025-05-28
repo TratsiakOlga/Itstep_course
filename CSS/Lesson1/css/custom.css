@@ -1,0 +1,26 @@
+div{
+    /*border: 3px dotted red;*/
+    border-width: 3px;
+    border-style: groove;
+    border-color: aqua;
+
+    margin: 10px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    margin: 20px 10px 5px 40px
+
+}
+    a{
+    padding: 10px;
+    display: block;
+}
+
+span{
+    padding: 10px;
+    margin: 10px;
+    display: block;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+    <style>
+        label{
+            display: block;
+        }
+        textarea{    
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+<form action="/" method="GET">
+    <div>
+        <label for="">Введите ФИО</label>
+        <input id="fio" type="text" name="fio" required />
+    </div>
+    <div>
+        <label for="">Введите email</label>
+        <input type="email" name="email" required />
+    </div>
+    <div>
+        <label for="">Дата рождения</label>
+        <input type="date" name="birthday" required>
+    </div>
+    <div>
+        <label for="">Введите адрес аккаунта GitHub</label>
+        <input type="url" name="github"/>
+    </div>
+    <div>
+        <label for="">Загрузите резюме</label>
+        <input type="file" name="CV"/><br>
+    </div>
+    <div>
+        <label for="">Ваше образование</label>
+        <input type="checkbox" name="grade[]" value="Базовое" checked> Базовое<br>
+        <input type="checkbox" name="grade[]" value="Среднее"> Среднее<br>
+        <input type="checkbox" name="grade[]" value="Высшее"> Высшее      
+    </div>
+    <div>
+        <label for="">Ваш пол</label>
+        <input type="radio" name="gender" value="male" checked> Мужской <br>
+        <input type="radio" name="gender" value="female"> Женский
+    </div>
+    <div>
+        <label for="">Придумайте пароль для входа</label>
+        <input type="password" name="password" required>
+    </div>
+    <div>
+        <label for="">Придумайте пароль для входа</label>
+        <input type="password" name="password">
+    </div>   <!---->
+    <button type="button">Отправить</button>
+    <button type="submit">Отправить</button><br>
+<!---->
+    <div>
+        <label for="">Расскажите о себе:</label>
+        <textarea name="about" cols="130" rows="10"></textarea>
+    </div>
+    <div>
+        <label for="">Выберите желаемую должность:</label>
+        <select name="rank">
+            <optgroup label="Высший менеджмент">
+                <option value="director">Директор</option>
+                <option value="director">Менеджер</option>
+            </optgroup>
+            <optgroup label="Работяги">
+                <option value="director">Мастер</option>
+                <option value="director">Уборщик</option>
+            </optgroup>
+        </select>
+    </div>
+    
+
+
+
+<!---->
+<br>
+<br>
+    <input type="text" name="fio" placeholder="Введите ФИО"/>
+    <input type="email" name="email"/>
+    <input type="date" name="birthday"/>
+    <input type="url" name="github"/>
+    <input type="file" name="CV"/><br>
+    <input type="checkbox" name="gender" value="male"> Мужской <br>
+    <input type="checkbox" name="gender" value="male"> Женский
+    <br>
+    <input type="radio" name="grade" value="Базовое"> Базовое<br>
+    <input type="radio" name="grade" value="Среднее"> Среднее<br>
+    <input type="radio" name="grade" value="Высшее"> Высшее
+    <br>
+    <input type="password" name="password">
+    <input type="color"> 
+    <br>
+    <input type="submit" value="Отправить"/>
+    <!---->
+
+</form>    
+</body>
+</html>

@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+html, body {
+    margin:0
+}
