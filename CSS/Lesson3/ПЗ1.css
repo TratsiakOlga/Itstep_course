@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.frame-border{
+    border: 5px solid white;
+}
+.outer-frame{
+    border-color: orange;
+    border-left: none;
+    border-top: none;
+    width: 300px;
+}
+.main-frame{
+    border-color: yellow;
+}
+.inner-frame{
+    border-color: orange;
+    border-bottom: none;
+    border-right: none;
+    padding: 10px 15px;
+}

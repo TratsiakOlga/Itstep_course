@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+    <style>
+        div{
+            width: 992px;
+            margin: 0 auto
+        }
+              
+        #block1{
+            background-color: brown;           
+        }
+        
+        #block2{
+            background-color:cornflowerblue;
+            height: 100px;
+            font-size: 20px;
+            color: blue;
+            font-weight: 700;
+            border: 2px solid red;
+            margin-top: -30px;
+            margin-left: -30px;
+
+        }
+
+        #block1 ul li a{
+        /*    color: black;*/
+        }
+
+        a{
+            /*color: red !important;*/
+        }
+        
+        #block2 a{
+            color:seagreen
+        }
+
+        .color_red{
+            color: red
+        }
+        .color_yellow{
+            color: yellow
+        }
+        .color_green{
+            color:green
+        }
+        .color_pink{
+            color: pink
+        }
+        .big_text{
+            font-size: 30px;
+        }
+        #block1 a.color_green{
+            font-size: 40px
+        }
+        .decoration_none{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="block1">Блок 1
+        <ul>
+            <li><a href="" class="color_pink big_text decoration_none">Ссылка 1</a></li>
+            <li><a href="" class="color_green">Ссылка 2</a></li>
+            <li><a href="" class="color_yellow">Ссылка 3</a></li>
+            <li><a href="" class="color_red">Ссылка 4</a></li>
+            <li><a href="">Ссылка 5</a></li>
+        </ul>
+    </div>
+    <div id="block2">
+        <ul>
+            <li>lorem ipsum</li>
+        </ul>
+        <a href="">Это ссылка</a>
+    </div>
+    <a href="">Отдельная ссылка</a>
+</body>
+</html>
