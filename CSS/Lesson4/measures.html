@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Единицы измерения</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        
+        html, body{
+            padding: 0;
+            margin: 0;
+        }
+        #block{
+            height: 100vh;
+            background-image: url('./bg.webp');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            /*background-color: rgb(60, 87, 175); - если картинка не на весь экран вмещается*/ 
+        
+            /*background: url('./bg.webp') center center no-repeat coral;
+            background-size: cover; - как можно более кратко написать предыдущий код*/
+        }
+        
+        #block2{
+            width: 50%;
+            background-color: pink;
+            background-color: #fff;
+            background-color: rgb(65, 155, 30);
+            background-color: rgba(47,146,52,1);
+        }
+
+        #block3{
+            width: 10rem;
+        }
+
+        .border{
+            border: 1px solid black;
+            margin-bottom: 15px;
+            height: 50px;
+        }
+        .container{
+            margin: 0 auto;
+            width: 1320px;
+            border: 1px solid black;
+            padding:15px;
+        }
+        .container::after{
+            content: " ";
+            display: table;
+            clear: both;
+        }
+        
+        .column{
+            width: 33.3333%;
+            border: 1px solid red;
+            padding: 30px;
+            /*display: inline-block;*/
+            float: left;
+        }
+        .column nav ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .column nav li{
+            margin-bottom: 10px;
+        }
+        .column a{
+            text-decoration: none;
+            display: block;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            border-bottom: 1px solid #d2cece;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="block" class="border"></div>
+    <div id="block2" class="border"></div>
+    <div id="block3" class="border"></div>
+    <div class="container">
+        <div class="column">
+            <h3>Меню</h3>
+            <nav>
+                <ul>
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">Каталог</a></li>
+                    <li><a href="">Магазины</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="column">
+            <h1>jlkhklh</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus repellat quasi impedit! Deserunt harum vitae quidem ullam provident neque mollitia error illo, alias laudantium velit esse, in consequatur aliquid veritatis!</p>
+        </div>
+        <div class="column"></div>
+    </div>
+</body>
+</html>

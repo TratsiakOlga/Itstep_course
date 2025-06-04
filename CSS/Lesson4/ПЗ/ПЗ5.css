@@ -1,0 +1,28 @@
+#task6{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background: url('../bg.webp') center center no-repeat;
+    background-size: cover;
+}
+.register-form{
+    background: #fff;
+    padding: 15px;
+    width: 320px;
+    margin: 0 auto;
+}
+
+.register-form input{
+    border: 1px solid #ccc;
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+}
+.register-form button{
+    color: #fff;
+    width: 100%;
+    background-color: #1cbc11;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}

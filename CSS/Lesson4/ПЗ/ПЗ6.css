@@ -1,0 +1,24 @@
+.pages{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pages li{
+    display: inline-block;
+}
+.pages li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    color:#333;
+    text-decoration: none;
+    padding: 11px;
+    padding-left: 16px;
+    font-weight: bold;
+}
+.pages li a.active{
+    background-color: #d10953;
+    color: #fff;
+}
