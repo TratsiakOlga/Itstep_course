@@ -1,0 +1,43 @@
+.container{
+    width: 960px;
+    margin: 0 auto;
+     padding: 20px;
+     border: 1px solid black;
+     position: relative;
+}
+.container p{
+    border: 2px solid blue;
+    background-color: yellow;
+    padding: 5px;
+    margin-top: 0;
+}
+.container p.bg_red{
+    background-color: red;
+    width: 50%;
+}
+/*Когда движется один элемент, остальные остаются на месте
+.positioned{
+    position: relative;
+    top: 0px;
+} */
+/*Когда элемент находится поверх остальных*/
+/*Чтобы разместить элемент по центру относительно родителя (если родитель не найдень, относительно экрана), но это не очень хороший вариант, потому что заключено все в жесткие рамки*/
+.positioned{
+    position:absolute;
+    top:50%;
+    left:50%;
+    right: 0;
+    margin-left: -250px;
+    margin-top: -37.5px !important;
+    z-index: 10;
+}
+/*Вытащили элемент из обычного потока. Позиционируется всегда относительно вьюпорта (экрана). Всегда будет на месте, которое ему определили. Даже если будем прокручивать страницу. Изначально элемент находится в той же позиции*/
+.fixed{
+    background-color: violet !important;
+    position: fixed;
+    top: 0;
+    width: 220px;
+    height: 100vh;
+    right:;
+    z-index: 8;
+}
