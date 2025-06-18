@@ -1,0 +1,45 @@
+:root{
+    --color-black: #363636;
+    --size: 200px;
+}
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+.container div{
+    border: 2px solid var(--color-black);
+    width: var(--size, 100px);
+    height: var(--size, 100px);
+    /*border-bottom: none;*/
+    border-radius: 50%;
+}
+.container div:last-child{  /*nth-chicd(3)*/
+    --color-black: blue;
+    border-bottom: 2px solid var(--color-black);
+    background-color: green;
+}
+.container div:first-child{/*nth-child(1)*/
+    background-color: red;
+}
+.container div:nth-child(2){
+    background-color: yellow;
+}
+.container div:nth-child(even){/*применяется к четным элементам), можно написать 2n*/
+    border-radius: 0 !important;
+} 
+.container div:nth-child(odd){/*применяется к нечетным элементам), можно написать 2n-1*/
+    position: relative;
+    left: 50px;
+}
+
+.container div :nth-child(2n-1){
+    position: relative;
+    left: 50px;
+}
+.container div :nth-child(n+2){
+    display: inline-block;
+}
+.container div :nth-child(-n+3){
+    display: inline-block;
+}
