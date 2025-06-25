@@ -1,0 +1,20 @@
+.table{
+border-collapse: collapse;
+width: 100%;
+}
+.table th, .table td{
+    padding: 10px;
+}
+.table th{
+    text-align: left;
+}
+.table tbody tr:nth-child(odd) td{
+    background-color: #f2f2f2;
+}
+.table tr td{
+    border-bottom: 1px solid #949494;
+}
+.table tbody tr td:first-of-type{
+    font-weight: 700;
+    width: 50px;
+}

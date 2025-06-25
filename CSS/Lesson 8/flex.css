@@ -1,0 +1,33 @@
+html, body{
+    height: 100%;  
+}
+.container{
+    width: 960px;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #888;
+    display: flex;
+    /*flex-direction: row-reverse; - если вертикально отображено (поперечная ось)*/
+    /*flex-direction: column-reverse; - если ось горизонтальная (основная)*/
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 15px;
+}
+
+.container div{
+    padding: 30px;
+    border:1px solid black
+}
+.first{
+    background-color: brown;
+}
+.second{
+    background-color: cadetblue;
+}
+.third{
+    background-color:darkgray;
+}
+nav ul{
+    display: flex;
+}

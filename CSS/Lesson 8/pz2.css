@@ -1,0 +1,64 @@
+html, body{
+    height: 100%;
+    
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+}
+
+.form img{
+    width: 80px;
+}
+.form input{
+    border-radius: 0;
+    border: 1px solid #f2f2f2
+}
+.form input[type="email"]{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 45px;
+    padding: 10px;
+    width: 100%;
+}
+.form input[type="email"]:focus{
+    z-index: 1;
+}
+.form input[type="password"]{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 45px;
+    padding: 10px;
+    margin-top: -1px;
+    width: 100%;
+}
+.form input:focus{
+    border-radius: 0;
+    outline: 0;
+    border-color: #3899f5 ;
+}
+/*.form input[type="email"]:focus + input{
+    border-top: 1px solid transparent;
+}*/
+.checkbox{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    display: flex;
+}
+.form button{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #175997;;
+    color: white
+}
+.copy{
+    color: gray;
+}
