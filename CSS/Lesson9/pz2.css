@@ -1,0 +1,97 @@
+section{
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    padding: 50px 0;
+    margin-top: 50px;
+    background-color: white;
+}
+body{
+    background-color: gray;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+.section-header{
+    font-size: 32px;
+    border-bottom: 1px solid #adadad;
+    padding-bottom: 7px;
+}
+.columns{
+    display: flex;
+    gap:30px;
+    margin-top: 55px;
+}
+.column a{
+    color:#0d6efd;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: rgba(13,110,253, 0.5);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.column a:hover{
+    color:(4,95,231);
+    text-decoration-color:rgba(4,95,231, 0.5);
+}
+.column a:after{
+    content: " ";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid rgb(13,110,253);
+    border-right: 1px solid rgb(13,110,253);
+    transform: rotate(45deg);
+}
+
+.column .icon{
+    background-color: #0d6efd;
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+    color:white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+.column h3{
+    font-size: 30px;
+    margin-bottom: 0;
+}
+.column p{
+    margin-top: 10px;
+    /*text-align: center;*/
+}
+/* Если хотим, чтобы все было по центру
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}*/
+.flex-direction-row{
+    flex-direction: row !important;
+}
+.hanging-icons .icon{
+    flex-shrink: 0;
+}
+.hanging-icons .column{
+    display: flex;
+    align-items: flex-start;
+    gap:15px;
+}
+.hanging-icons .column h3{
+    margin-top: 0;
+}
+.hanging-icons .column p{
+    text-align: left;
+}
+.hanging-icons .column .icon{
+    background-color: lightgray;
+    width: 55px;
+    height: 55px;
+    color: black
+}
