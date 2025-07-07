@@ -10,7 +10,8 @@ body{
     background-color: gray;
 }
 .container{
-    width: 1320px;
+    max-width: 1320px;
+    width: 100%;
     margin: 0 auto;
 }
 .section-header{
@@ -22,6 +23,11 @@ body{
     display: flex;
     gap:30px;
     margin-top: 55px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .column a{
     color:#0d6efd;
@@ -94,4 +100,38 @@ body{
     width: 55px;
     height: 55px;
     color: black
+}
+
+@media screen and (max-width:1320px){
+    .section-header{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media(max-width:1180px){
+    .columns{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media(max-width:992px){
+    .columns p{
+        font-size: 14px;
+    }
+}
+@media(max-width:690px){
+    .columns{
+        flex-direction: column;
+    }
+    .section-header{
+        text-align: center;
+        margin-top: 0;
+    }
+    section{
+        padding-top: 30px;
+    }
+    column h3{
+        text-align: center;
+    }
 }

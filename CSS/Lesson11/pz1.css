@@ -1,0 +1,67 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sendwich{
+    display: none;
+    width: 45px;
+    height: 40px;
+    border-radius: 5px;
+    border:1px solid gray;
+    background: none;
+    /*display: flex; - если none, то display:flex не нужен*/ 
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.sendwich span{
+    background-color: gray;
+    height: 2px;
+    width: 25px;
+    display: block;
+}
+header{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding:9px 15px;
+}
+header .logo{
+    color: white;
+    font-size: 24px;
+}
+header nav a{
+    color:rgb(151,151,151);
+}
+header nav a:hover{
+    color:rgb(183,183,183);
+}
+header input{
+    height: 40px;
+    border-radius: 7px;
+    border:none;
+    margin-left: auto;
+}
+header nav li ul{
+    display: none;
+}
+header nav > ul{
+    display: flex;
+    gap: 15px;
+    margin-left: 25px;
+}
+
+@media (max-width:992px){
+    header nav{
+        display: none;
+    }
+    header input{
+        display: none;
+    }
+    .sendwich{
+        display: flex;
+        margin-left: auto;
+    }
+}
