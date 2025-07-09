@@ -1,0 +1,89 @@
+.conteiner{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+button{
+    border: 1px solid black;
+    height: 40px;
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    /*transition: all 0.2s cubic-bezier(1, 0.01, 0.2, 0.99); - но лучше использовать linear*/
+}
+button:hover{
+    color: black;
+    background-color: white;
+    /*opacity: 0; - кнопка становится прозрачной при наведении*/
+        font-size: 24px;
+}
+.transformed{
+    margin-top: 30px;
+    width: 260px;
+    height: 260px;
+    border: 2px solid black;
+    background-color: brown;
+    /*transform: rotate(45deg); - вращение по оси Х,У - transform: rotateХ(45deg); - по оси Х вверх/вниз; по оси У - влево/вправо*/
+    transform: scale(1);
+    overflow: hidden;
+}
+.transformed img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.transformed img:hover{
+    transform: scale(1.5);
+}
+.translate{
+    transform: translate(50px,12px);
+    /*transform: skew(10deg); - из квадрата делает ромб, то есть его наклоняет*/
+}
+.transformed.translate{
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 0.3s linear;
+}
+.transformed:hover + .translate{
+    opacity: 1;
+    transform: translateY(0);
+}
+.transformed.animated{
+    animation:rot 1s infinite normal linear both;
+    /*animation:rot 1s 2 normal linear both 2s; можно так сделать, прокрутится 2 раза*/ 
+}
+/* крутится квадрат по кругу:*/
+@keyframes rot{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.procese-bar{
+    border:1px solid black;
+    padding: 2px;   
+}
+.procese-bar div{
+    background-color: black;
+    animation: process 3s linear both 1;
+    height: 10px;
+}
+
+@keyframes process {
+    from{
+        width: 0px;
+    }
+    50%{
+        background-color: cadetblue;
+    }
+    to{
+        width: 100%;
+        background-color: cadetblue;
+    }
+}
