@@ -1,0 +1,27 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.container{
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    background-color:transparent;
+}
+.main-banner{
+    background:url(Bitmap.png) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
