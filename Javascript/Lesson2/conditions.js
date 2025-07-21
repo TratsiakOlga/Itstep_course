@@ -170,4 +170,4 @@ switch(action) {
     break;
     default:
         console.log('Такая операция не поддерживается');
-}
+}*/
