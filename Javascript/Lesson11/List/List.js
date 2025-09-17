@@ -58,10 +58,14 @@ let data = {
 let container = document.getElementById('container');
 createTree(container, data); // создаёт дерево в контейнере*/
 
-//Задача пока не завершена 
-/*let data = {
+//Задача.  
+let data = {
     "Рыбы": {
-      "форель": {},
+      "форель": {
+        "вкусная":{},
+        "красная":{},
+        "дорогая":{},
+      },
       "лосось": {}
     },
   
@@ -76,11 +80,32 @@ createTree(container, data); // создаёт дерево в контейне�
       }
     }
   };
-
+  
+//Метод с рекурсией:
   let div = document.getElementById("root");
     
-  function createTree(container, data){
+  function newCreateTree(container, data){
     let ul = document.createElement("ul");
+
+    for(let key in data) {
+      let li = document.createElement("li");
+      li.innerText = key;
+    
+      if(data[key]) {
+        newCreateTree(li, data[key]);
+      }
+      
+      ul.append(li);
+    }
+    
+    container.append(ul);
+  }
+
+  newCreateTree(div, data);
+
+//Метод без рекурсии:  
+function createTree (container, data) {
+    let ul = document.createElement("ul")
 
     for(let key in data) {
         let li = document.createElement("li");
@@ -102,7 +127,8 @@ createTree(container, data); // создаёт дерево в контейне�
 
                         ulSuperInner.append(li2);
                     }
-                    li.append(ulSuperInner);
+
+                    li1.append(ulSuperInner);
                 }
 
                 ulInner.append(li1);
@@ -115,9 +141,9 @@ createTree(container, data); // создаёт дерево в контейне�
     }
 
     container.append(ul);
-  }
+}
 
-  createTree(ul, data);*/
+  createTree(div, data);
 
   //Рекурсия.
   //3! = 1*2*3 - Три факториал равно.
@@ -128,7 +154,7 @@ createTree(container, data); // создаёт дерево в контейне�
   console.log(faktorial(3));*/
 
   // Задача 3. 
-function showNotification(options){
+/*function showNotification(options){
     let div = document.createElement("div");
 
     div.classList.add("notification");
@@ -154,9 +180,9 @@ showNotification({
     right: 10,
     html: "Ошибка, вы ввели неверные данные",
     className: "error"
-});
+});*/
 //чтобы сообщение появлялось в разных местах (нужно сделать генератор случайных чисел):
-function notify() {
+/*function notify() {
     let top = randomInteger(0, 400);
     let right = randomInteger(0, 600);
     showNotification({
@@ -172,4 +198,4 @@ function randomInteger(min, max) {
     return Math.floor(rand);
 }
 
-setInterval(notify, 1000)
+setInterval(notify, 1000)*/
