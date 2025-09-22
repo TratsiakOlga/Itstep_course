@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+div{
+  width: 400px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: center;
+  border: 1px solid black;
+  gap:10px;
+
+}
+button{
+    border:none;
+    background-color: cadetblue;
+    color:#ffffff;
+    width: 100px;
+    height: 50px;
+    align-items: center;
+    cursor: pointer;
+}
+.animated{
+  animation: rot 1s infinite linear forwards;
+}
+
+@keyframes rot {
+  0%{
+    transform: rotateX(0);
+  }
+  100%{
+    transform: rotateX(360deg);
+  }
+}
