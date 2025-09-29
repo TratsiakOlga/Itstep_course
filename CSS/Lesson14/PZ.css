@@ -1,0 +1,45 @@
+#gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    gap: 2px;
+    justify-content: center;
+}
+
+#gallery .header {
+    grid-area: 1/1/2/4;
+    color: white;
+    background-color: green;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#gallery a{
+    position: relative;
+}
+
+#gallery a:after{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    content: " ";
+    position: absolute;
+    top:0px;
+    left: 0px;
+    transition: opacity 0.2s ease-out;
+    /*border-radius: 50%; - если тень у картинки сделать круглой*/
+}
+
+#gallery a:hover:after{
+    opacity: 0.7;
+}
+#gallery img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    /*border-radius: 50%; - если картинки хотим сделать круглыми*/
+}
