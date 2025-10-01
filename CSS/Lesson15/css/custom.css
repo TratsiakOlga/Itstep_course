@@ -1,0 +1,26 @@
+.carousel-item img{
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
+.body{
+    font-family: "Source Sans 3", sans-serif;
+}
+.header-contacts{
+    gap:40px;
+}
+.header-contacts{
+    font-size: 14px;
+}
+.header-contacts a{
+    font-size: 20px;
+    text-decoration: none;
+}
+.header-contacts > div:first-child a{
+    text-decoration: underline;
+}
+.header-top{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom:1px solid #888888;
+}
