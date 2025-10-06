@@ -1,0 +1,164 @@
+:root{
+    --font-open-sans: "Open Sans", sans-serif;
+    --font-cormorant: "Cormorant", serif;
+
+    --color-white: #ffffff;
+    --color-bg: #1D2F30;
+    --color-bg-shade: #0B1919;
+    --color-green: #BAE249;
+    --color-green-active: #688B05;
+    --color-grey: #899d9d;
+    --color-red: #e24949;
+    --color-green-hover: #91AC46;
+
+    --transition: all 0.2s linear;
+}
+
+body{
+    background: var(--color-bg);
+    font-family: var(--font-open-sans);
+}
+
+h1, h2, h3, h4{
+    font-family: var(--font-cormorant);
+}
+
+a{
+    text-decoration: none;
+    transition: all var(--transition);
+}
+
+.footer-copyright{
+    font-size: 12px;
+    line-height: auto;
+    color: var(--color-grey);
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.footer-socials{
+    background-color:var(--color-bg-shade);
+    padding: 18px 0;
+}
+
+.footer-socials nav {
+    gap: 30px;
+}
+
+.footer-socials nav a svg path {
+    transition: all var(--transition);
+}
+
+.footer-socials nav a:hover svg path{
+    fill: var(--color-green);
+}
+
+header{
+    padding: 20px 0;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: var(--color-bg);
+}
+
+.menu{
+    gap: 64px;
+    margin-left: 125px;
+}
+
+.menu a {
+    color: var(--color-white);
+}
+
+menu:hover{
+    color: var(--color-green);
+}
+
+.menu a:focus{
+    color: var(--color-green-active);
+}
+
+.header-tools{
+    gap: 64px;
+}
+
+.header-tools button{
+    background: none;
+    border: none;
+    width: 24px;
+    height: 24px;
+    
+}
+
+.header-tools button svg path{
+    transition: all var(--transition);
+}
+
+.header-tools button:hover svg path{
+    stroke: var(--color-green-hover);
+}
+
+.header-tools button:focus svg path{
+    stroke: var(--color-green-active);
+}
+
+#main-banner{
+    background-image: url('../img/mail_banner_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 175px;
+    padding-bottom: 115px;
+    position: relative;
+}
+
+#main-banner::after{
+    content: ' ';
+    display: block;
+    opacity: 0.7;
+    background-color: var(--color-bg);
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#main-banner .container{
+    z-index: 5;
+    position: relative;
+    color: var(--color-white);
+}
+#main-banner h1 {
+    font-size: 60px;
+    line-height: 100%;
+    margin-bottom: 16px;
+}
+#main-banner p{
+    margin-bottom: 24px;
+}
+#main-banner a{
+    color: var(--color-green);
+    font-weight: bold;
+}
+#main-banner a svg path{
+    transition: var(--transition);
+}
+#main-banner a:hover, #main-banner a:hover svg path{
+    color:var(--color-green-hover);
+    fill: var(--color-green-hover);
+}
+#main-banner a:focus, #main-banner a:hover svg path{
+    color:var(--color-green-active);
+    fill: var(--color-green-active);
+}
+
+#main-banner a svg{
+    transition: var(--transition);
+}
+
+#main-banner a:hover svg,
+#main-banner a:focus svg{
+    width: 51px;
+    height: 16px;
+}
