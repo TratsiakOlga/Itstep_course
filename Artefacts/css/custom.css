@@ -129,25 +129,31 @@ menu:hover{
     position: relative;
     color: var(--color-white);
 }
+
 #main-banner h1 {
     font-size: 60px;
     line-height: 100%;
     margin-bottom: 16px;
 }
+
 #main-banner p{
     margin-bottom: 24px;
 }
+
 #main-banner a{
     color: var(--color-green);
     font-weight: bold;
 }
+
 #main-banner a svg path{
     transition: var(--transition);
 }
+
 #main-banner a:hover, #main-banner a:hover svg path{
     color:var(--color-green-hover);
     fill: var(--color-green-hover);
 }
+
 #main-banner a:focus, #main-banner a:hover svg path{
     color:var(--color-green-active);
     fill: var(--color-green-active);
@@ -161,4 +167,106 @@ menu:hover{
 #main-banner a:focus svg{
     width: 51px;
     height: 16px;
+}
+
+#carousel{
+    padding-top: 60px;
+}
+
+.card{
+    border: none;
+    background: none;
+    border-radius: none;
+    color: var(--color-grey);
+    line-height: 150%;
+}
+
+.card .card-image{
+    background-color: var(--color-bg-shade);
+    padding: 30px 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .card-image img{
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    width: auto;
+}
+
+.card .card-image span{
+    position: absolute;
+    line-height: 100%;
+    top: 16px;
+    left: 16px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid var(--color-grey);
+    font-family: var(--font-cormorant);
+    text-align: center;
+    padding-top: 1px;
+    font-weight: 700;
+}
+
+.card .card-content{
+    border: 1px solid var(--color-bg-shade);
+    padding: 16px 16px 24px;
+    flex-grow: 1;
+}
+
+
+.card .card-content h3{
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.card .card-content .button{
+    align-self: flex-start;
+}
+.button{
+    border: 1px solid var(--color-green);
+    color: var(--color-green);
+    border-radius: 0;
+    padding: 10.5px 28.5px;
+    display: inline-block;
+}
+
+.button:hover{
+    color: var(--color-bg-shade);
+    background: var(--color-green);   
+}
+
+.button:focus{
+    color: var(--color-bg-shade);
+    background: var(--color-green-active);
+    border: 1px solid var(--color-green-active);
+}
+
+.owl-carousel .owl-stage{
+    display: flex;
+    align-items: stretch;
+}
+
+.owl-carousel .owl-stage .owl-item .card{
+    height: 100%;
+}
+
+.slider-nav{
+    font-size: 24px;
+    color: var(--color-white);
+    font-family: var(--font-cormorant);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 57px;
+    padding-top: 16px;
+}
+
+.slider-nav button{
+    background: none;
+    border: none;
 }
