@@ -389,10 +389,10 @@ a.arrowed:focus svg{
     outline-offset: 2px;
 }
 
-.contact-form .form-control ~ .invalid-feedback{
+/*.contact-form .form-control ~ .invalid-feedback{
     display: none;
 }
 
 .contact-form .form-control .is-invalid ~ .invalid-feedback{
     display: block;
-}
+}*/
