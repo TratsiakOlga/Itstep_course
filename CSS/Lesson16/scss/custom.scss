@@ -1,0 +1,48 @@
+@import 'vars';
+@import 'normalize';
+@import 'body';
+@import 'mixins';
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @include transform(translateX(50px));
+
+    li{
+        a{
+            text-decoration: none;
+        }
+    
+        &:first-child{
+            a{
+                color:blue;
+            }
+        }   
+    }
+}
+
+%display_flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%sqare_block{
+    width: 200px;
+    height: 200px;
+}
+
+.block{
+    @extend %sqare_block;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    @include transform(rotate(30deg));
+}
+
+.blue_block{
+    @extend %sqare_block;
+    @extend %display_flex_center;
+    background-color: aqua;
+}
