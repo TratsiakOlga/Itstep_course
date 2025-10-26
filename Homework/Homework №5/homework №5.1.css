@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    display: block;
+    padding-top: 35px;
+    padding-bottom: 65px;
+    text-align: center;
+    color:rgb(67, 64, 64)
+}
+.color-yellow{
+    color: #e1e12d; 
+}
+.color-white{
+    color:white
+}
+.color-gray{
+    color:gray
+}
+.button_div{
+    padding-top: 70px;
+}
+.button{
+    width: 250px;
+    height: 60px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(67, 139, 175);
+    box-shadow: 0 11px 0px rgb(52, 122, 225);
+    font-size: 27px;
+}
+.button:active{
+    transform: translateY(2px);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+a.color-gray:hover {
+    color:#1da422
+}
+a {
+  color:#1da422   
+}
+a.cross{
+    color:white
+}
+.modal{
+    position:fixed;
+    width: 440px;
+    height: 256px;
+    padding: 1px 19px;
+    margin: -95px 530px;
+    border-radius: 8px;
+    background-color: white;
+    text-align: left;
+    /*display: none;*/
+}
+.container:before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 37, 58, 0.8);
+    /*display: none;*/
+}
+.result{
+    font-size: 14px;
+    font-style:italic
+}
+.close{
+    position:absolute;
+    top:-9px;
+    right: -12px;
+}    
+.cross{
+    position: absolute;
+    border: 2px solid rgb(255, 249, 249);
+    border-radius: 20px;
+    color: black;
+    top: 2px;
+    right: 1px;
+    font-size: 14px;
+    padding: 3px 6px;
+    background-color: rgba(25, 24, 24, 0.4);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+}
+.cross:hover{
+    background-color: red;
+}
+
+.button.modal:target{
+    display: flex;
+    visibility: visible;
+    pointer-events: auto;
+    transition: all 0.3s easy-out;
+}
+

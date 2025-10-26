@@ -1,0 +1,30 @@
+.container {
+    margin: 10px;
+    margin-left: 400px;
+    width: 420px;
+    height: 480px;
+    background-color: rgb(235, 235, 233);
+    padding-left: 20px;
+    padding-top: 7px;
+    border: 1px solid black;
+    position: relative;
+}
+.container2{
+    margin-top: 10px;
+    width: 398px;
+    height: 420px;
+    font-size: 18px;
+    line-height: 35px;
+}
+.position1{
+    padding-left: 40px;
+    background-color: rgba(110, 179, 244, 0.714);   
+}
+.position2{
+    padding-left: 40px;
+    background-color: rgba(186, 192, 198, 0.837);
+}
+.position3{
+    padding-left: 40px;
+    background-color: rgb(160, 205, 245);
+}

@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.button{
+   padding: 21px 21px;
+   background: #673ab7;
+   border: white;
+   border-radius: 25px;
+   cursor: pointer;
+}
+.button::after{
+    position: absolute;
+    content: '';
+    width: 13px;
+    height: 2px;
+    background-color: white;
+    top:20px;
+    right:14px;
+    transform: rotate(90deg);
+}
+.button::before{
+    content: '';
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(-45deg);
+    top: 15px;
+    right: 16px;
+}

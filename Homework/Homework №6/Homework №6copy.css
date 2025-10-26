@@ -1,0 +1,81 @@
+:root{
+    --color-black: #000000;
+    --color-white: #ffffff;
+}
+header{
+    background: var(--color-black, #000000);
+    position: fixed;
+    left: 0;
+    top:0;
+    padding: 15px 30px;
+    width: 100%;
+    font-family: Anton;
+}
+.logo{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color-white, #ffffff);
+    font-size: 35px;
+}
+
+.menu-toggles{
+    width: 35px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    margin-top: -17px;
+}
+.menu-toggles hr{
+    border: none;
+    border-top: 3px solid var(--color-white);
+    font-size: 15px;
+}
+a{
+    color:white;
+    font-size: 50px;
+}
+.wrapper{
+    height: 100vh;
+    background-image: url(https://static6.depositphotos.com/1036039/628/v/450/depositphotos_6288572-stock-illustration-technology-planet-vector-illustration.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    font-family: Ubuntu Mono;
+}
+.content{
+    position: fixed;
+    width: 100%;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content h1{
+    color: white;
+    font-size: 70px;
+    -webkit-text-stroke: 1px var(--color-black, #000000);
+    margin: 0;
+    padding-top: 50px;
+}
+.content p{
+    color:rgb(61, 250, 4);
+    font-size: 27px;
+    -webkit-text-stroke: 1px var(--color-black, #000000);
+    font-weight:bold;
+    margin: 5px;
+    padding-bottom: 55px;
+}
+.content img{
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+}
+.content a{
+    margin-right: 5px;
+}

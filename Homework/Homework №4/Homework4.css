@@ -1,0 +1,185 @@
+/*Task1 styles*/
+* {
+    box-sizing: border-box;
+}
+
+.frame-border{
+    border: 5px solid white;
+}
+.outer-frame{
+    border-color: orange;
+    border-left: none;
+    border-top: none;
+    width: 300px;
+}
+.main-frame{
+    border-color: rgba(255, 234, 0, 0.868);
+}
+.inner-frame{
+    border-color: orange;
+    border-bottom: none;
+    border-right: none;
+    padding: 10px 15px;
+}
+/*Task1 styles end*/
+/*Task2 styles*/
+.bg-dark{
+    background-color: black;
+    padding: 10px 15px;
+}
+.color-white{
+    color:white;
+}
+.color-red{
+    color:red
+}
+.color-green{
+    color:rgb(14, 208, 243);
+}
+.color-yellow{
+    color: yellow
+}
+/*Task2 styles end*/
+/*Task3 styles*/
+.container{
+    width: 420px;
+}
+.header{
+    color: white;
+    background-color: rgb(6, 157, 119);
+    padding: 10px 15px;
+    font-size: 20px;
+}
+.text{
+    background-color: rgb(229, 222, 222);
+    margin-left: 40px;
+    padding: 15px;
+    margin-top: -7px;
+}
+/*Task3 styles end*/
+/*Task4 styles*/
+.sqare{
+    width: 100px;
+    height: 100px;
+    border: 2px solid gray;
+    background-color: white;
+}
+.sqare-padding{
+    padding: 2px;
+}
+.sqare div{
+    background-color: black;
+    height: 100%;
+}
+.sqare-margin{
+    margin-top: -50px;
+    margin-left: 50px;
+}
+/*Task4 styles end*/
+/*Task5 styles*/
+#task5 div{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    margin: 10px;
+    float: left;
+}
+#task5 div.blue{
+    background-color: rgb(22, 144, 244);
+}
+#task5 div:hover{
+    background-color: orange;
+}
+/*Task5 styles end*/
+/*Task6 styles*/
+.container2{
+    width: 370px;
+    height: 295px;
+    margin-top: 20px;
+    padding-top: 25px;
+    padding-bottom: 150px;
+    background: center center no-repeat;
+    background-color:#f8f8f8;
+}
+.register-form{
+    background: #fff;
+    padding: 15px;
+    width: 320px;
+    margin: 0 auto;
+}
+.register-form input{
+    border: 1px solid #ccc;
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+}
+.register-form button{
+    color: #fff;
+    width: 100%;
+    background-color: #1cbc11;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+.register-form button:hover{
+    background-color: #14a20a;
+}
+/*Task6 styles end*/
+/*Task7 styles*/
+.pages{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.pages li{
+    display: inline-block;
+}
+.pages li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    color:#333;
+    text-decoration: none;
+    padding: 11px;
+    padding-left: 16px;
+    font-weight: bold;
+}
+.pages li a.active{
+    background-color: #d10953;
+    color: #fff;
+}
+/*Task7 styles end*/
+/*Task8 styles*/
+.breadcrumbs{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
+    list-style: none;
+    display: flex;
+}
+.breadcrumbs ul {
+    padding: 0;
+    margin: 0;    
+}
+.breadcrumbs li{
+    display: block-inline;
+}
+a{
+    text-decoration: none;
+    color:#0b56ea;
+}
+a:hover{
+    text-decoration: underline;
+}
+.active{
+    color:#333;
+    text-decoration: none;
+}
+.breadcrumbs li:not(:last-child)::after{
+    content: ">";
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 12px;
+}

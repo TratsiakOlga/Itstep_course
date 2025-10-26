@@ -1,0 +1,21 @@
+.container {
+    margin: 50px;
+    margin-left: 400px;
+    width: 810px;
+    height: 480px;
+    background-color: rgb(235, 235, 233);
+    padding-left: 25px;
+    padding-top: 20px;
+    border: 1px solid black;
+    position: relative;
+}
+dt{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ol{
+   padding-left: 70px; 
+}
+dd{
+    padding-left: 14px;
+}

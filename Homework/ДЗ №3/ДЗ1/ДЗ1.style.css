@@ -1,0 +1,68 @@
+.container {
+    margin-top: 50px;
+    margin-left: 300px;
+    width: 960px;
+    height: 250px;
+    background-color: rgb(235, 235, 233);
+    padding-top: 200px;
+    position: relative;
+}
+.rectangle-1 {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 900px;
+    height: 390px;
+    background-color: rgb(238, 140, 140);
+}
+.rectangle-2 {
+    position: absolute;
+    left: 85px;
+    top: 60px;
+    width: 800px;
+    height: 50px;
+    background-color: rgb(215, 90, 90)
+}
+.rectangle-3 {
+    position: absolute;
+    left: 85px;
+    top: 130px;
+    width: 800px;
+    height: 50px;
+    background-color: rgb(215, 90, 90)
+}
+.rectangle-4 {
+    position: absolute;
+    left: 85px;
+    top: 200px;
+    width: 800px;
+    height: 50px;
+    background-color: rgb(215, 90, 90)
+}
+.rectangle-5 {
+    position: absolute;
+    left: 85px;
+    top: 270px;
+    width: 800px;
+    height: 50px;
+    background-color: rgb(215, 90, 90)
+}
+.rectangle-6 {
+    position: absolute;
+    left: 85px;
+    top: 340px;
+    width: 800px;
+    height: 50px;
+    background-color: rgb(215, 90, 90)
+}
+span1 {
+    color: white;
+    padding-left: 20px;
+    font-size: 40px;
+}
+span2 {
+    color: white;
+    padding-left: 40px;
+    font-size: 40px;
+    background-color: rgb(111, 13, 13);
+}

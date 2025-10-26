@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+} 
+.container{
+    height: 100vh;
+    place-items: center;
+    display: grid;
+}
+.button{
+    position: absolute;
+    padding: 11px 15px;
+    background: blue;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.amount{
+    position: relative;
+    top: -21px;
+    right: -63px;
+    background-color: red;
+    color:white;
+    padding: 4px 8px;
+    border-radius: 15px;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+}

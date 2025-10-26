@@ -1,0 +1,37 @@
+body{
+    height: 100vh;
+    background: rgb(186, 177, 177);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heart{
+    font-size: 550px;
+    color: rgb(182, 14, 14);
+    animation: heart 2.3s infinite ease-in-out;
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(1);
+        transform-origin: center center;
+        transition-timing-function: ease-out;
+    }
+    10% {
+        transform: scale(0.90);
+        transition-timing-function: ease-in;
+    }
+    20% {
+        transform: scale(0.95);
+        transition-timing-function: ease-out;
+    }
+    35% {
+        transform: scale(0.85);
+        transition-timing-function: ease-in;    
+    }
+    50% {
+        transform: scale(1);
+        transition-timing-function: ease-out;    
+    }
+    
+}
