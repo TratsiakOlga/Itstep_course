@@ -4,7 +4,7 @@
   "description": "Webpack test application",
   "license": "ISC",
   "author": "Olga Tratsiak <tratsiak_olga@mail.ru>",
-  "type": "commonjs",
+  //"type": "commonjs", - нужен, чтобы указать как должен выполняться
   "main": "index.js",
   "scripts": {
     "build": "npx webpack build",

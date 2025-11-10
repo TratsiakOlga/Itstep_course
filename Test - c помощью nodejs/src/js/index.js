@@ -1,5 +1,5 @@
-const _ = require ('lodash');
-const $ = require ('jquery');
+const _ = require ('lodash'); //- если используется Nodejs
+const $ = require ('jquery'); //- если используется Nodejs
 const alertModule = require('./alert.js');
 
 function component() {

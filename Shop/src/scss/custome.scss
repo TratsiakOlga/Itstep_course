@@ -1,0 +1,17 @@
+@import 'normalize';
+
+/*$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1120px - изначально здесь стояло 1320px
+);  - если хотим, чтобы ширина была другой. И именно в таком порядке все должно стоять. Сразу параметры, а только потом импорт bootstrap*/
+
+@import 'bootstrap';
+
+#cart{
+    right: 40px;
+    top: 15px;
+    z-index: 9;
+}
