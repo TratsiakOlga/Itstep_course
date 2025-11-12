@@ -35,4 +35,4 @@ if(!cart) {
   cart = [];
 }
 
-$("#cart-count").html(cart.length);
+$("#cart-count").html(cart.length); 
