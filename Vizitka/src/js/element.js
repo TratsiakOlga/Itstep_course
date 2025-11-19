@@ -1,10 +1,10 @@
 class Element{
     constructor(elementName){
         this.name = elementName;
-        this.id = '';
+        this.id = null;
         this.classes = [];
         this.childrens = [];
-        this.css = [];
+        this.css = {};
     }
 
     setId(id){
@@ -30,21 +30,58 @@ class Element{
         }
     }
     
-    render(parantElement){
+    addStyles(styles){
+        Object.assign(this.css, styles);
+    }
+
+    deleteStyles(...styles){//deleteStyles('width', 'transform')
+        for(let key of styles){
+            delete this.css[key];
+        }
+    }
+
+    /* Для одного:
+    appendChild(child) {
+        this.childrens.push(child);
+    }*/
+// Для нескольких:
+    appendChilds(...childs) {
+        for(let c of childs){
+            this.childrens.push(c);    
+        }
+    }
+
+    createDomElement(){
         let el = document.createElement(this.name);
-        el.id = this.id;
+         if(this.id){
+            el.id = this.id;
+        }
 
         for (let c of this.classes){
             el.classList.add(c);
         }
-        
-        parantElement.append(el); 
+                
+        for(let key in this.css){
+            /*let styleName = key;
+            let styleValue = this.css[key];*/
+            el.style[key] = this.css[key];
+        }
+     
+            /*console.log(key);
+            console.log(this.css[key]);*/
+
+        /* Пример: как можно записывать составные части css.
+         el.style.border = "1px solid black"; - можем и другим способом записать и этот способ будет предпочтительнее
+        el.style['border'] = "1px solid black",*/
+        //console.dir(el);
+        for (let child of this.childrens){
+            el.append(child.createDomElement());
+        }
+
+        return el;
     }
-        //console.dir(el) - проверяем установился ли метод добавления свойства id;
-
-        
+        //console.dir(el) - проверяем установился ли метод добавления свойства id;     
         //Можно написать и одной строчкой: parantElement.append(document.createElement(this.name))
-
 }
 
 
