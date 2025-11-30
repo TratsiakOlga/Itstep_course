@@ -96,7 +96,9 @@ h3{
     line-height: 100%; 
     color: #d4d6d4;
 }
-
+.container1 a:hover {
+    color:#ffd723
+}
 .window-above{
     position: absolute;
     background-color: #fafafa;
