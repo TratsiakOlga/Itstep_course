@@ -1,0 +1,1 @@
+(()=>{const t=document.getElementById("cat-facts");setInterval(changeCatFact(),5e3),async function(){try{const a=await fetch("https://catfact.ninja/fact"),c=(await a.json()).fact;t.innerText=c}catch(t){console.error("Произошла ошибка при получении факта:",t)}}()})();

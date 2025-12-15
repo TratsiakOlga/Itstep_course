@@ -1,0 +1,18 @@
+{
+  "name": "catfact",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Olga Tratsiak <tratsiak_olga@mail.ru>",
+  "scripts": {
+    "build": "npx webpack build",
+    "dev": "npx webpack --watch"
+  },
+  "devDependencies": {
+    "webpack": "^5.102.1",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}
