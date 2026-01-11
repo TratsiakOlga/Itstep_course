@@ -1,0 +1,47 @@
+@media (max-width:1440px){
+    html, body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+}
+@media (max-width:1390px){
+    header{
+        margin: 0px 70px;
+    }
+    .main{
+        margin: 77px 50px;
+    }
+    .introduction img{
+        width: 690px;
+    }
+    .page_four{
+        margin: 100px 100px;
+    }
+    .page_eight{
+        padding: 0px 90px;
+    }
+    .page_ten{
+        padding: 100px 120px;
+    }
+}
+@media (max-width:1340px){
+    header{
+        margin: 0px 10px;
+    }
+    .main{
+        margin: 77px 30px;
+    }
+    .introduction img{
+        width: 640px;
+    }
+    .page_four{
+        margin: 100px 70px;
+    }
+    .page_eight{
+        padding: 0px 50px;
+    }
+    .page_ten{
+        padding: 100px 100px;
+    }
+}
