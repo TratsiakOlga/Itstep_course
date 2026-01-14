@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 function AboutPage(){
     let content = {
         title: "About",
@@ -9,7 +11,7 @@ function AboutPage(){
         <>
         <h1>{content.title}</h1>
         <p>{content.text + "???"}</p>
-        <button>{content.button}</button>
+        <Button startCount={3} btnClass="btn-info" step={3}/>
         </>
     );
           

@@ -1,4 +1,3 @@
-import Button from "./button";
 import AboutPage from "./AboutPage";
 import MainPage from "./MainPage";
 

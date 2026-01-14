@@ -62,4 +62,13 @@ module.exports = {
     filename: 'index.[fullhash].css' //'[name].css - если написать так, то в dist будет присваиваться имя main.css
   }),
   ],
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
+    watchFiles: [path.join(__dirname, 'src')],
+    compress: true,
+    hot:true,
+    port: 9000,
+  }
 };
