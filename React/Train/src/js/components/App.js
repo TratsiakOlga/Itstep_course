@@ -3,6 +3,9 @@
   import Title from "./Title";
   import Card from "./Card";
   import Counter from "./Counter";
+  import Timer from "./Timer";
+  import TextInput from "./TextInput";
+  import LoginForm from "./LoginForm";
 
   const products = [
     {id: 1, name: 'Название товара1', image: 'https://png.pngtree.com/thumb_back/fh260/background/20240717/pngtree-new-nature-beautiful-background-pictures-image_16017682.jpg', text: 'По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст'},
@@ -21,6 +24,9 @@
 
     return (
       <>
+        <Timer />
+        <LoginForm />
+        <TextInput value = {10} onChange={(event) => console.log(event.target.value)}/>
         <Paragraph>
         Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.
         </Paragraph>
