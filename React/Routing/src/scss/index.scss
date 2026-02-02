@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.main-menu{
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+
+    & a {
+        color: white;
+        text-decoration: none;
+
+        &.active{
+            color:orange;
+        }
+    }
+}
