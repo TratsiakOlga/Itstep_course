@@ -52,6 +52,7 @@ for(let user of users) {
 
 
 //2. Дата и время.
+
 // A. Получить текущую дату:
 let time = new Date();
 console.log(time);
@@ -92,8 +93,154 @@ for(let i = 0; i < 10; i++){
     console.log(time3);
 }
 //З. Автоисправление неправильных дат. - Объект Date делает это сам.
+
 //Чтобы измерить время - можно с помощью Date.now
 console.log(Date.now()); //Количество милисекунд указывается.
 //И. Бенчмаркет - тест на производительность. Количество до начала милисекунд, и по кончании - количество милисекунд. Чтобы замерить время выполнения задачи. С помощью готовых функций пишется. На сайче учебник JS.
 
+//4. Map и Set
 
+let m = new Map();
+m.set("1", "str1");
+m.set(1, "num1");
+
+//m.set("1", "str1").set(1, "num1"); - можно и так записывать.
+let o = {
+    prop: "Prop",
+    name: "Name",
+    age: 25
+}
+m.set(o, "kjlholj");
+
+//for(let key of Object.keys(o)
+for(let key of Object.entries(o)){
+    //console.log(key);
+    //['prop', 'Prop'] сделаем деструктурирующее присваивание (преобразование). Первое значение будет присвоено в keyName, второе в keyValue
+    let [keyName, keyValue] = key;
+    /* Запись выше является следующим(это все одно и то же):
+    let keyName = key[0];
+    let keyValue = key[1];*/
+
+    console.log(keyName);
+    console.log(keyValue);
+}
+
+//5. Set
+
+let arr = ["1", "1", "2", "3"];
+console.log(arr);
+
+let set = new Set(arr);
+console.log(set)
+set.add("123") //set.add("1");
+console.log(set)
+
+//6. Замыкание, области видимости.
+
+//console.log(keyName) - если внутри скобок [] или {}, такая часть не выполнится, так как в глобальности области не видна
+/* Оба примера не видны в консоли, так как находятся в локальной области видимости. А чтобы выводилась - должно быть в глобальной. Внутри скобок - локальная система видимости. Переменная внутри функции - тоже локальная область видимости.
+if (1 > 0){
+    let k = 9;
+}
+console.log(k)
+{
+    let h = "Hello";
+}
+console.log(h)*/
+//Ниже показана функция замыкания. Функция, которая находится внутри другой функции и на которую могут ссылаться другие переменные.
+function makeCounter(){
+    let count = 0;
+
+    return function(){
+        return count++;
+    }
+}
+
+let counter = makeCounter();
+let counter1 = makeCounter();
+
+console.log(counter())
+console.log(counter())
+console.log(counter1())
+console.log(counter1())
+console.log(counter1())
+console.log(counter1())
+
+//7. Функции-конструкторы
+
+/* В данном примере создали класс:
+class User {
+    constructor(){
+        this.name = null;
+        this.age = 0;
+    }
+}
+
+let user1 = new User();
+user1.name = "Ivan";
+user1.age = 34; 
+Создадим сейчас его с помощью функций-конструкторов*/
+//но создавать классы можно с помощью функций-конструкторов.
+/*function User() {
+    this.name = null;
+    this.age = 0;
+    this.showName = function(){  //это уже создали метод.
+        console.log(this.name);
+    }
+}*/
+// Теперь мы может создавать (конструировать) объекты, но уже только с помощью функции
+/*let user1 = new User();
+user1.showName();*/
+//Но использование классов предпочтительнее, чем функций-конструкторов.
+//Объект создается только с помощью функции-конструктора. От обычной функции объект создать невозможно. Может только вызвать.
+
+//8. Декораторы.
+//Функция делает расчеты, но всегда получаем одни и те же результаты. Было бы здорово, чтобы функция сохранила в кэш расчет. И при следующем расчете уже часть расчета будет готова. И здесь можно применить декоратор, которая создать обертку (внутрь передается нужная функция, кэширование). В результате если видим, что в кэше есть результат мы его забираем и сразу возвращает. Если результата нет, мы вызываем здесь. Функция работает и результат мы сохраняем в кэш. Итог: наша функция не меняется, а расчеты производит та, которая вокруг. То есть не будет заново запускаться тот же расчет.
+/*function slow(x) {
+    // здесь могут быть ресурсоёмкие вычисления
+    alert(`Called with ${x}`);
+    return x;
+  }
+  
+  function cachingDecorator(func) {
+    let cache = new Map();
+  
+    return function(x) {
+      if (cache.has(x)) {    // если кеш содержит такой x,
+        return cache.get(x); // читаем из него результат
+      }
+  
+      let result = func(x); // иначе, вызываем функцию   ****
+  
+      cache.set(x, result); // и кешируем (запоминаем) результат
+      return result;
+    };
+  }
+  
+  slow = cachingDecorator(slow);
+  
+  alert( slow(1) ); // slow(1) кешируем
+  alert( "Again: " + slow(1) ); // возвращаем из кеша
+  
+  alert( slow(2) ); // slow(2) кешируем
+  alert( "Again: " + slow(2) ); // возвращаем из кеша*/
+//Здесь декоратор это func. И вызывается он в месте **** func(x)
+
+//9 Привязка контекста к функции с помощью call
+function User() {
+    this.name = null;
+    this.age = 0
+}
+
+let user1 = new User();
+user1.name = "Petr";
+
+function sayHi(helloPhrase, komma) {
+    let show = () =>{
+    console.log(`${helloPhrase}, ${this.name}${komma}`);
+    }
+
+    show();
+}
+
+sayHi.call(user1, "Hello", "!");
