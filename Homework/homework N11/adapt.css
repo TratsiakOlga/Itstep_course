@@ -3,45 +3,87 @@
         width: 100%;
         overflow-x: hidden;
     }
-    
-}
-@media (max-width:1390px){
+@media (max-width:1360px){
+    .header{
+        gap: 5px;
+    }
     header{
-        margin: 0px 70px;
+        margin: 0 50px;
     }
     .main{
-        margin: 77px 50px;
+        margin: 77px 40px;
     }
     .introduction img{
-        width: 690px;
+        width: 100%;
     }
-    .page_four{
-        margin: 100px 100px;
+    .projects{
+        justify-content: center;
     }
-    .page_eight{
-        padding: 0px 90px;
-    }
-    .page_ten{
-        padding: 100px 120px;
-    }
-}
-@media (max-width:1340px){
-    header{
-        margin: 0px 10px;
-    }
-    .main{
-        margin: 77px 30px;
-    }
-    .introduction img{
-        width: 640px;
+    .ten_text{
+        width: 1100px;
     }
     .page_four{
         margin: 100px 70px;
     }
     .page_eight{
-        padding: 0px 50px;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width:1220px){
+    .page_two{
+        margin: 100px 210px;
+    }
+    .text_three{
+        margin-right: 10px;
+    }
+    .page_four{
+        width: 90%;
+    }
+    .text_four{
+        gap: 45px;
+    }
+    .column{
+        justify-content: center;
+    }
+    .text_six{
+        margin-right: 65px;
+    }
+    .six_inside{
+        margin: 60px 55px;
+    }
+    .text_eight{
+        padding-top: 70px;
+        padding-bottom: 60px;        
+    }
+    .text_eight h3{
+        display: flex;
+        justify-content: center;
+    }
+    .project{
+        display: ruby-text;
+        margin-bottom: 5px;
+    }
+    .projects{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+    }
+    .page_eight{
+        height: auto;
+    }
+    .nine_text{
+        gap: 20px 10px;
+    }
+    .page_nine{
+        margin: 50px 50px;
     }
     .page_ten{
-        padding: 100px 100px;
+        padding: 100px 75px;
     }
+    .ten_text{
+        width: auto;
+    }
+}    
+
 }

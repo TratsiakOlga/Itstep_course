@@ -1,0 +1,398 @@
+:root{
+    --font-open-sans: "Open Sans", sans-serif;
+    --font-cormorant: "Cormorant", serif;
+
+    --color-white: #ffffff;
+    --color-bg: #1D2F30;
+    --color-bg-shade: #0B1919;
+    --color-green: #BAE249;
+    --color-green-active: #688B05;
+    --color-grey: #899d9d;
+    --color-red: #e24949;
+    --color-green-hover: #91AC46;
+    --color-green-text: #506829;
+    --color-green-focus: #83A440;
+    --transition: all 0.2s linear;
+}
+
+body{
+    background: var(--color-bg);
+    font-family: var(--font-open-sans);
+}
+
+h1, h2, h3, h4{
+    font-family: var(--font-cormorant);
+}
+
+a{
+    text-decoration: none;
+    transition: all var(--transition);
+}
+
+.footer-copyright{
+    font-size: 12px;
+    line-height: auto;
+    color: var(--color-grey);
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.footer-socials{
+    background-color:var(--color-bg-shade);
+    padding: 18px 0;
+}
+
+.footer-socials nav {
+    gap: 30px;
+}
+
+.footer-socials nav a svg path {
+    transition: all var(--transition);
+}
+
+.footer-socials nav a:hover svg path{
+    fill: var(--color-green);
+}
+
+header{
+    padding: 20px 0;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: var(--color-bg);
+}
+
+.menu{
+    gap: 64px;
+    margin-left: 125px;
+}
+
+.menu a {
+    color: var(--color-white);
+}
+
+menu:hover{
+    color: var(--color-green);
+}
+
+.menu a:focus{
+    color: var(--color-green-active);
+}
+
+.header-tools{
+    gap: 64px;
+}
+
+.header-tools button{
+    background: none;
+    border: none;
+    width: 24px;
+    height: 24px;
+    
+}
+
+.header-tools button svg path{
+    transition: all var(--transition);
+}
+
+.header-tools button:hover svg path{
+    stroke: var(--color-green-hover);
+}
+
+.header-tools button:focus svg path{
+    stroke: var(--color-green-active);
+}
+
+.shadowed-bg{
+    position: relative;
+}
+
+#main-banner{
+    background-image: url('../img/mail_banner_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 175px;
+    padding-bottom: 115px;
+}
+
+.shadowed-bg::after{
+    content: ' ';
+    display: block;
+    opacity: 0.7;
+    background-color: var(--color-bg);
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.shadowed-bg .container{
+    z-index: 5;
+    position: relative;
+}
+
+#main-banner .container{
+    z-index: 5;
+    position: relative;
+    color: var(--color-white);
+}
+
+#main-banner h1 {
+    font-size: 60px;
+    line-height: 100%;
+    margin-bottom: 16px;
+}
+
+#main-banner p{
+    margin-bottom: 24px;
+}
+
+#main-banner a{
+    color: var(--color-green);
+    font-weight: bold;
+}
+
+#main-banner a svg path{
+    transition: var(--transition);
+}
+
+#main-banner a:hover, #main-banner a:hover svg path{
+    color:var(--color-green-hover);
+    fill: var(--color-green-hover);
+}
+
+#main-banner a:focus, #main-banner a:hover svg path{
+    color:var(--color-green-active);
+    fill: var(--color-green-active);
+}
+
+a.arrowed svg{
+    transition: var(--transition);
+}
+
+a.arrowed:hover svg,
+a.arrowed:focus svg{
+    width: 51px;
+    height: 16px;
+}
+
+#carousel{
+    padding-top: 60px;
+}
+
+.card{
+    border: none;
+    background: none;
+    border-radius: none;
+    color: var(--color-grey);
+    line-height: 150%;
+}
+
+.card .card-image{
+    background-color: var(--color-bg-shade);
+    padding: 30px 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .card-image img{
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    width: auto;
+}
+
+.card .card-image span{
+    position: absolute;
+    line-height: 100%;
+    top: 16px;
+    left: 16px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid var(--color-grey);
+    font-family: var(--font-cormorant);
+    text-align: center;
+    padding-top: 1px;
+    font-weight: 700;
+}
+
+.card .card-content{
+    border: 1px solid var(--color-bg-shade);
+    padding: 16px 16px 24px;
+    flex-grow: 1;
+}
+
+
+.card .card-content h3{
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.card .card-content .button{
+    align-self: flex-start;
+}
+.button{
+    border: 1px solid var(--color-green);
+    color: var(--color-green);
+    border-radius: 0;
+    padding: 10.5px 28.5px;
+    display: inline-block;
+}
+
+.button:hover{
+    color: var(--color-bg-shade);
+    background: var(--color-green);   
+}
+
+.button:focus{
+    color: var(--color-bg-shade);
+    background: var(--color-green-active);
+    border: 1px solid var(--color-green-active);
+}
+
+.owl-carousel .owl-stage{
+    display: flex;
+    align-items: stretch;
+}
+
+.owl-carousel .owl-stage .owl-item .card{
+    height: 100%;
+}
+
+.slider-nav{
+    font-size: 24px;
+    color: var(--color-white);
+    font-family: var(--font-cormorant);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 57px;
+    padding-top: 16px;
+}
+
+.slider-nav button{
+    background: none;
+    border: none;
+}
+
+.block-header{
+    font-style: italic;
+    color: var(--color-white);
+    font-size: 48px;
+    line-height: 100%;
+    margin-bottom: 30px;
+}
+
+#articles{
+    padding-bottom: 60px;
+}
+.article-preview{
+    background-color: var(--color-green);
+    padding: 16px;
+    padding-bottom: 24px;
+}
+
+.article-preview h3{
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+ 
+.article-preview h3{
+    color: var(--color-green-text);
+}
+
+.article-preview a{
+    color: var(--color-bg-shade);
+    font-weight: 700;
+}
+
+.article-preview a:hover{
+    color:var(--color-green-active);
+}
+
+.article-preview a svg path{
+    transition: var(--transition);
+}
+
+.article-preview a:hover svg path{
+    fill:var(--color-green-active);
+}
+
+#contact-form{
+    background-image: url('../img/form_bg.jpg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.contact-form p{
+    color: var(--color-white);
+}
+
+#contact-form .block-header {
+    margin-bottom: 16px;
+}
+
+.contact-form .col-4 form{
+    gap: 24px;
+}
+
+.contact-form .form-control{
+    border-radius: 0;
+    height: 45px;
+}
+
+.contact-form button.button{
+    background-color: var(--color-green);
+    font-weight: 700;
+    color: var(--color-bg-shade);
+    align-self: flex-start;
+    transition: var(--transition);
+}
+
+.contact-form button.button:hover{
+    background-color: var(--color-green-hover);
+    border-color: var(--color-green-hover);
+}
+
+/*.contact-form .form-control:hover{
+    background: var(--color-grey);
+    color: var(--color-white);
+    border-color: var(--color-grey);
+}
+
+.contact-form .form-control:hover::placeholder{
+    color:var(--color-white);
+}
+
+.contact-form .form-control:hover::-moz-placeholder{
+    color:var(--color-white);
+}
+
+.contact-form .form-control:hover::-webkit-input-placeholder{
+    color:var(--color-white);
+}*/
+
+.contact-form .form-control:focus{
+    border-radius: 0;
+    box-shadow: none;
+    outline-color: var(--color-green-focus);
+    outline-style: solid;
+    outline-width: 1px;
+    outline-offset: 2px;
+}
+
+/*.contact-form .form-control ~ .invalid-feedback{
+    display: none;
+}
+
+.contact-form .form-control .is-invalid ~ .invalid-feedback{
+    display: block;
+}*/
