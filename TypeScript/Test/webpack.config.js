@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/js/oop.ts',
+  entry: './src/js/table.tsX',
   output: {
     filename: 'bundle.[fullhash].js',
     path: path.resolve(__dirname, 'dist'),

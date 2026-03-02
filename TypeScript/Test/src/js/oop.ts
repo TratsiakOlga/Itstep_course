@@ -215,3 +215,54 @@ employeeTom.company = "Amazon";
 //C помощью преобразования типа мы добавили к tom параметр company (т.е. "Amazon")
 
 //Обобщения.Generick (Дженерик).
+function getId<T>(id: T): T {
+    return id;
+}
+
+console.log(getId<number>(5));
+console.log(getId<string>("String"));
+
+class Man<T> {
+    private _id: T;
+
+    constructor(id: T){
+        this._id = id;
+    }
+
+    getId(): T{
+        return this._id;
+    }
+}
+
+let m: Man<number> = new Man<number>(5);
+let n = new Man<string>("lkjoijkj;");
+
+console.log(m.getId());
+console.log(n.getId());
+
+type Person = {
+    name: string
+}
+
+function compareName<T extends Person>(user1: T, user2: T): void{
+    if(user1.name === user2.name) {
+        console.log("Имена совпадают");
+    } else {
+        console.log("Имена не совпадают");
+    }
+}
+
+let p: Person = {
+    name: "Ivan"
+}
+
+let pp: Person = {
+    name: "Petr"
+}
+
+let ppp: {age: number} = {
+    age: 25
+}
+
+compareName(p, pp);
+//console.log(compareName(p, ppp)); - высветится ошибка. 
