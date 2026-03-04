@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/",
+      "lib": ["DOM"],
+      "noImplicitAny": true,
+      "module": "es6",
+      "target": "es5",
+      "jsx": "react-jsx",
+      "allowJs": true,
+      "moduleResolution": "node",
+      "noEmitOnError": true,
+      "allowSyntheticDefaultImports": true
+    },
+    "files": ["globals.d.ts"]
+}
